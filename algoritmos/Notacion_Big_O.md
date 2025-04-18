@@ -9,15 +9,15 @@ Esta notacion nos ayudara a entender como escalan los algortimo en términos de 
 Esta se denota por la letra **O** la cual proviene del **Orden de crecimiento** de un algortimo. ESta es una forma de **Expresar una cota superior  asintótica**, lo que describe un limite superior del peor comporamiento posible de una algiritmo en terminos de eficiencia.
 
 
-
+---
 ### ejemplo
 - `O(1)` → Tiempo constante, no importa el tamaño de la entrada.
 - `O(n)` → Tiempo lineal, crece proporcionalmente a `n`.
 - `O(log n)` → Tiempo logarítmico, muy eficiente para entradas grandes.
 - `O(n^2)` → Tiempo cuadrático, crece rápido con entradas grandes.
 
+---
 ## Tabla de complejidad de Big-O
-
 | Notacion       | nombre          | Ejemplo  de uso                               |
 |----------------|-----------------|-----------------------------------------------|
 | `O(1)`         | Constante       | Acceder a un indice de un array               |
@@ -30,12 +30,14 @@ Esta se denota por la letra **O** la cual proviene del **Orden de crecimiento** 
 | `O(C^n)`       | Exponencial     | Backtracking, problemas que son NP-complejos  |
 | `O(n!)`        | Factorial       | Permutaciones exhautivas                      |
 
+---
 ## Caracteristicas
 - Esta describe el comportamiento de un algoritmo en funcion del crecimiento de su entrada `n`
 - Muestra el **Limite superior** con respecto al tiempo de ejecucion o espacio requerido del algoritmo
 - Siempre se enfoca en mostrar el **peor caso**
 - Ignora constantes o terminos menores por ejemplo: `O(3n + 2)` se expresa solo como `O(n)`
 
+---
 ## Importante
 - Big o  **no mide el tiempo exacto**, sino mide la relacion que se tiene entre la entrada y los recursos usados
 - Temos que tener en cuenta que no es lo mismo `O(n)` que `O(n log n)`.
