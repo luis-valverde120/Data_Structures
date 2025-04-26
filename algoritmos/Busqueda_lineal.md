@@ -37,7 +37,29 @@ Una analogia interesante es al buscar un libro en una biblioteca sin saber en qu
 ### 🔹 Python
 
 ```python
-# Explicación breve de qué hace este código
-class NombreClase:
-    def __init__(self):
-        pass
+# Lineal search es una funcion que busca un elemento dentro de un arreglo
+# y devuelve el indice del elemento si lo encuentra, o -1 si no lo enecuentra
+def lineal_search(arr, target):
+    # Recorrer el arreglo hasta encontrar el elemento objetivo
+    for index, value in enumerate(arr):
+        # si el elemento es igual al objetivo devolver el indice
+        if value == target:
+            return index
+
+    # si no se encuentra el elemento devolver -1
+    return -1
+```
+
+### 🔹 Go
+
+``` go
+func linealSearch(arr []int, findElement int) (int, bool) {
+	// Recorrer el arreglo hasta encontrar el elemento
+	for index, value := range arr {
+		if value == findElement {
+			return index, false // Retornar el índice del elemento encontrado
+		}
+	}
+	return -1, true
+}
+```
