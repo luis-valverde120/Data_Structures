@@ -53,13 +53,13 @@ def lineal_search(arr, target):
 ### 🔹 Go
 
 ``` go
-func linealSearch(arr []int, findElement int) (int, bool) {
+func linealSearch(arr []int, findElement int) int {
 	// Recorrer el arreglo hasta encontrar el elemento
 	for index, value := range arr {
 		if value == findElement {
-			return index, false // Retornar el índice del elemento encontrado
+			return index // Retornar el índice del elemento encontrado
 		}
 	}
-	return -1, true
+	return -1 
 }
 ```
